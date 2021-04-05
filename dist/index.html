@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="main">
+            <header class="main__header">
+                <div class="logo">
+                    <img src="img/bike-icon.png" alt="КАРТИНКА">
+                </div>
+                <nav class="main__nav">
+                    <li>BICYCLES</li>
+                    <li>PARTS</li>
+                    <li>ACCESSORIES</li>
+                    <li>EXTRAS</li>
+                    <li><img src="img/Basket_icon.svg" alt=""></li>
+                </nav>
+            </header>
+        </div>
+        <ul class="slider__controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <li class="slider__controls-prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #fff;
+                          stroke-width: 2px;
+                          fill-rule: evenodd;
+                        }
+                      </style>
+                    </defs>
+                    <path id="prev" class="cls-1" d="M33,461H71a10,10,0,0,1,10,10v38a10,10,0,0,1-10,10H33a10,10,0,0,1-10-10V471A10,10,0,0,1,33,461Zm12.97,26.53a3.3,3.3,0,0,1,4.77,0l8.24,8.52a3.573,3.573,0,0,1,0,4.933,3.3,3.3,0,0,1-4.771,0l-8.24-8.52A3.573,3.573,0,0,1,45.97,487.53Zm0,0,8.24-8.52a3.3,3.3,0,0,1,4.771,0,3.573,3.573,0,0,1,0,4.933l-8.24,8.52a3.3,3.3,0,0,1-4.77,0A3.573,3.573,0,0,1,45.97,487.53Z" transform="translate(-22 -460)"/>
+                  </svg>
+            </li>
+            <li class="slider__controls-next" data-controls="next" aria-controls="customize" tabindex="-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #535353;
+                          stroke-width: 2px;
+                          fill-rule: evenodd;
+                        }
+                      </style>
+                    </defs>
+                    <path id="next" class="cls-1" d="M1849,461h38a10,10,0,0,1,10,10v38a10,10,0,0,1-10,10h-38a10,10,0,0,1-10-10V471A10,10,0,0,1,1849,461Zm25.03,26.53a3.3,3.3,0,0,0-4.77,0l-8.24,8.52a3.568,3.568,0,0,0,0,4.933,3.3,3.3,0,0,0,4.77,0l8.24-8.52A3.568,3.568,0,0,0,1874.03,487.53Zm0,0-8.24-8.52a3.3,3.3,0,0,0-4.77,0,3.568,3.568,0,0,0,0,4.933l8.24,8.52a3.3,3.3,0,0,0,4.77,0A3.568,3.568,0,0,0,1874.03,487.53Z" transform="translate(-1838 -460)"/>
+                  </svg>        
+            </li>
+        </ul>
+        <div class="slider__item">
+            <div class="slider__item-one"></div>
+            <div class="slider__item-two"></div>
+            <div class="slider__item-thre"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        afsdfassdf
+        
+    </div>
+    
+    
+    
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+        let slider = tns({
+            container: '.slider__item',
+            items: 1,
+            loop: true,
+            controlsContainer: "#customize-controls",
+            nav: false,
+        });
+    </script>
+</body>
+</html>
