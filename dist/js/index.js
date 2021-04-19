@@ -26,7 +26,7 @@ tab.addEventListener('click', e => {
             element.classList.remove('ds-block');
         }
     });
-    document.querySelector(`#${currentTab}`).classList.add('ds-block');
+    document.querySelector(`.tabcontent-${currentTab}`).classList.add('ds-block');
 })
 
 // валідація емайла
