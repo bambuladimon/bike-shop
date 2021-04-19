@@ -1,6 +1,7 @@
 const   hamburgerBtn = document.querySelector('.header__hamburger-btn'),
-        navList = document.querySelector('.header__nav');
-        formSubmit = document.querySelector('.form__submit');
+        navList = document.querySelector('.header__nav'),
+        formSubmit = document.querySelector('.form__submit'),
+        tab = document.querySelector('.products__tab');
 
 hamburgerBtn.addEventListener('click', e => {
     if (hamburgerBtn.classList.contains('active')) {
@@ -13,6 +14,20 @@ hamburgerBtn.addEventListener('click', e => {
 });
 
 formSubmit.addEventListener('click', validate);
+
+
+//переключення між вкладками
+tab.addEventListener('click', e => {
+    let currentTab = e.target.dataset.content;
+    let tabs = document.querySelectorAll('.products__cards');
+    
+    tabs.forEach(element => {
+        if (element.classList.contains('ds-block')) {
+            element.classList.remove('ds-block');
+        }
+    });
+    document.querySelector(`#${currentTab}`).classList.add('ds-block');
+})
 
 // валідація емайла
 function validateEmail(email) {
