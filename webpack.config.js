@@ -11,14 +11,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/css') 
    },
    module: {
-      rules: [{
+      rules: [
+      {
          test:/\.(s*)css$/,
          use: [
             miniCss.loader,
             'css-loader',
             'sass-loader',
          ]
-      }]
+      }
+   ]
    },
    plugins: [
       new miniCss({
