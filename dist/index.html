@@ -8,105 +8,91 @@
     <link rel='stylesheet' href='css/style.css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
 </head>
 <body>
-  <ul class="main-banner__controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
-    <li class="slider__controls-prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #fff;
-                  stroke-width: 2px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path id="prev" class="cls-1" d="M33,461H71a10,10,0,0,1,10,10v38a10,10,0,0,1-10,10H33a10,10,0,0,1-10-10V471A10,10,0,0,1,33,461Zm12.97,26.53a3.3,3.3,0,0,1,4.77,0l8.24,8.52a3.573,3.573,0,0,1,0,4.933,3.3,3.3,0,0,1-4.771,0l-8.24-8.52A3.573,3.573,0,0,1,45.97,487.53Zm0,0,8.24-8.52a3.3,3.3,0,0,1,4.771,0,3.573,3.573,0,0,1,0,4.933l-8.24,8.52a3.3,3.3,0,0,1-4.77,0A3.573,3.573,0,0,1,45.97,487.53Z" transform="translate(-22 -460)"/>
-          </svg>
-    </li>
-    <li class="slider__controls-next" data-controls="next" aria-controls="customize" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #535353;
-                  stroke-width: 2px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path id="next" class="cls-1" d="M1849,461h38a10,10,0,0,1,10,10v38a10,10,0,0,1-10,10h-38a10,10,0,0,1-10-10V471A10,10,0,0,1,1849,461Zm25.03,26.53a3.3,3.3,0,0,0-4.77,0l-8.24,8.52a3.568,3.568,0,0,0,0,4.933,3.3,3.3,0,0,0,4.77,0l8.24-8.52A3.568,3.568,0,0,0,1874.03,487.53Zm0,0-8.24-8.52a3.3,3.3,0,0,0-4.77,0,3.568,3.568,0,0,0,0,4.933l8.24,8.52a3.3,3.3,0,0,0,4.77,0A3.568,3.568,0,0,0,1874.03,487.53Z" transform="translate(-1838 -460)"/>
-          </svg>        
-    </li>
-  </ul>
-  <div class="main-banner">
+  <div class="mainscreen">
+    <ul class="mainscreen__controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+      <li class="mainscreen__controls__prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+              <defs>
+              </defs>
+              <path id="prev" class="main-banner__prev" d="M33,461H71a10,10,0,0,1,10,10v38a10,10,0,0,1-10,10H33a10,10,0,0,1-10-10V471A10,10,0,0,1,33,461Zm12.97,26.53a3.3,3.3,0,0,1,4.77,0l8.24,8.52a3.573,3.573,0,0,1,0,4.933,3.3,3.3,0,0,1-4.771,0l-8.24-8.52A3.573,3.573,0,0,1,45.97,487.53Zm0,0,8.24-8.52a3.3,3.3,0,0,1,4.771,0,3.573,3.573,0,0,1,0,4.933l-8.24,8.52a3.3,3.3,0,0,1-4.77,0A3.573,3.573,0,0,1,45.97,487.53Z" transform="translate(-22 -460)"/>
+            </svg>
+      </li>
+      <li class="mainscreen__controls__next" data-controls="next" aria-controls="customize" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+              <defs>
+              </defs>
+              <path id="next" class="main-banner__prev" d="M1849,461h38a10,10,0,0,1,10,10v38a10,10,0,0,1-10,10h-38a10,10,0,0,1-10-10V471A10,10,0,0,1,1849,461Zm25.03,26.53a3.3,3.3,0,0,0-4.77,0l-8.24,8.52a3.568,3.568,0,0,0,0,4.933,3.3,3.3,0,0,0,4.77,0l8.24-8.52A3.568,3.568,0,0,0,1874.03,487.53Zm0,0-8.24-8.52a3.3,3.3,0,0,0-4.77,0,3.568,3.568,0,0,0,0,4.933l8.24,8.52a3.3,3.3,0,0,0,4.77,0A3.568,3.568,0,0,0,1874.03,487.53Z" transform="translate(-1838 -460)"/>
+            </svg>        
+      </li>
+    </ul>
+    <ul class="mainscreen__paginations">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="mainscreen__banner main-banner">
       <div class="main-banner__items">
-          <div class="main-banner__item">
-            <img src="img/main-slider.png" alt="">
-          </div>
-          <div class="main-banner__item">
-            <img src="img/banner3.jpg" alt="">
-          </div>
-          <div class="main-banner__item">
-            <img src="img/banner2.jpg" alt="">
-          </div>
+        <div class="main-banner__item">
+          <img src="img/main-slider.png" alt="">
+        </div>
+        <div class="main-banner__item">
+          <img src="img/banner3.jpg" alt="">
+        </div>
+        <div class="main-banner__item">
+          <img src="img/banner2.jpg" alt="">
+        </div>
       </div>
-  </div>
-
-  <div class="main-screen wrapper">
-    <header class="header">
-      <div class="header__logo-wrapper">
-          <img class="header__logo" src="img/bike-icon.png" alt="КАРТИНКА">
-      </div>
-      <nav class="header__nav ds-none">
-        <ul class="header__nav-list">
-          <li class="header__nav-list-item">BICYCLES
-            <ul class="header__sub-list">
-              <li class="header__sub-list-item">First</li>
-              <li class="header__sub-list-item">Second</li>
-              <li class="header__sub-list-item">Third</li>
+    </div>
+    <div class="main-screen__content main-screen">
+      <div class="header">
+        <header class="header__content wrapper">
+          <div class="header__logo-wrapper">
+              <img class="header__logo" src="img/bike-icon.png" alt="КАРТИНКА">
+          </div>
+          <nav class="header__nav js-header__nav ds-none">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item">BICYCLES
+                <ul class="header__sub-list">
+                  <li class="header__sub-list-item">First</li>
+                  <li class="header__sub-list-item">Second</li>
+                  <li class="header__sub-list-item">Third</li>
+                </ul>
+              </li>
+              <li class="header__nav-list-item">PARTS</li>
+              <li class="header__nav-list-item">ACCESSORIES</li>
+              <li class="header__nav-list-item">EXTRAS
+                <ul class="header__sub-list">
+                  <li class="header__sub-list-item">First</li>
+                  <li class="header__sub-list-item">Second</li>
+                  <li class="header__sub-list-item">Third</li>
+                </ul>
+              </li>
+              <li class="header__nav-list-item"><img src="img/Basket_icon.svg" alt=""></li>
             </ul>
-          </li>
-          <li class="header__nav-list-item">PARTS</li>
-          <li class="header__nav-list-item">ACCESSORIES</li>
-          <li class="header__nav-list-item">EXTRAS
-            <ul class="header__sub-list">
-              <li class="header__sub-list-item">First</li>
-              <li class="header__sub-list-item">Second</li>
-              <li class="header__sub-list-item">Third</li>
-            </ul>
-          </li>
-          <li class="header__nav-list-item"><img src="img/Basket_icon.svg" alt=""></li>
-        </ul>
-      </nav>
-      <div class="header__hamburger-btn">
-        <span></span>
+          </nav>
+          <div class="header__hamburger-btn js-header__hamburger">
+            <span></span>
+          </div>
+        </header>
       </div>
-    </header>
-    <main class="slogan ">
-      <h1 class="slogan__heading">HANDMADE BICYCLE</h1>
-      <p class="slogan__sub-heading">You <span>create</span> the <span>journey</span>, we supply the <span>parts.</span></p>
-      <button class="slogan__button">SHOP BIKES</button>
-    </main>
-    <div class="scroll-icon ">
-      <svg xmlns="http://www.w3.org/2000/svg" width="66" height="77" viewBox="0 0 66 77">
-        <defs>
-          <style>
-            .scroll-icon__img {
-              fill: #515050;
-              fill-rule: evenodd;
-            }
-          </style>
-        </defs>
-        <path id="Scroll_icon_link" class="scroll-icon__img" d="M982.283,913.537a10.714,10.714,0,0,1-9.605-5.963,24.67,24.67,0,1,1,3.633-13.648A10.715,10.715,0,1,1,982.283,913.537ZM929.722,894.66a21.941,21.941,0,0,0,41.891,9.132c-0.029-.32-0.046-0.642-0.046-0.969a10.783,10.783,0,0,1,.206-2.094l-17.736-3.858h-0.418a2.716,2.716,0,1,1-3.02-4.463c-0.306-.147-0.475-0.224-0.1-0.225l0.131,0.211,0.041-.019-0.112-.193a2.63,2.63,0,0,1,.317.029l0.273-.473,0.162,0.093,7.63-17.871A21.946,21.946,0,0,0,929.722,894.66Zm31.964-19.516-7.864,17.839a2.789,2.789,0,0,1,.364.486h0.03v0.052a2.909,2.909,0,0,1,.135.288H954.9V894l17.742,4.153a10.674,10.674,0,0,1,.866-1.468c0.062-.666.1-1.339,0.1-2.021A21.932,21.932,0,0,0,961.686,875.144Zm20.768,19.686a8.163,8.163,0,1,0,8.165,8.163A8.164,8.164,0,0,0,982.454,894.83Zm-0.171,9.524a1.191,1.191,0,1,1,1.191-1.191A1.19,1.19,0,0,1,982.283,904.354Zm-0.5-1.01h1v16.343h-1V903.344Zm0,15.656h5.438v1h-5.438v-1Zm-21.619,27.393a2.134,2.134,0,0,1,0-2.868l4.615-4.955a1.8,1.8,0,0,1,2.672,0,2.136,2.136,0,0,1,0,2.869l-4.615,4.954A1.8,1.8,0,0,1,960.162,946.393Zm0,0-4.615-4.954a2.136,2.136,0,0,1,0-2.869,1.8,1.8,0,0,1,2.672,0l4.615,4.955a2.134,2.134,0,0,1,0,2.868A1.8,1.8,0,0,1,960.162,946.393ZM961.5,931a1.5,1.5,0,0,1,1.5,1.5v4a1.5,1.5,0,0,1-3,0v-4A1.5,1.5,0,0,1,961.5,931Zm0-10a1.5,1.5,0,0,1,1.5,1.5v5a1.5,1.5,0,0,1-3,0v-5A1.5,1.5,0,0,1,961.5,921Z" transform="translate(-927 -870)"/>
-      </svg>
-      
+      <main class="main-screen__slogan wrapper">
+        <h2 class="main-screen__heading">HANDMADE BICYCLE</h2>
+        <p class="main-screen__sub-heading">You <span>create</span> the <span>journey</span>, we supply the <span>parts.</span></p>
+        <button type="button" class="main-screen__button">SHOP BIKES</button>
+      </main>
+      <div class="main-screen__scroll-icon ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="66" height="77" viewBox="0 0 66 77">
+          <defs>
+          </defs>
+          <path id="Scroll_icon_link" class="main-screen__scroll-icon-img" d="M982.283,913.537a10.714,10.714,0,0,1-9.605-5.963,24.67,24.67,0,1,1,3.633-13.648A10.715,10.715,0,1,1,982.283,913.537ZM929.722,894.66a21.941,21.941,0,0,0,41.891,9.132c-0.029-.32-0.046-0.642-0.046-0.969a10.783,10.783,0,0,1,.206-2.094l-17.736-3.858h-0.418a2.716,2.716,0,1,1-3.02-4.463c-0.306-.147-0.475-0.224-0.1-0.225l0.131,0.211,0.041-.019-0.112-.193a2.63,2.63,0,0,1,.317.029l0.273-.473,0.162,0.093,7.63-17.871A21.946,21.946,0,0,0,929.722,894.66Zm31.964-19.516-7.864,17.839a2.789,2.789,0,0,1,.364.486h0.03v0.052a2.909,2.909,0,0,1,.135.288H954.9V894l17.742,4.153a10.674,10.674,0,0,1,.866-1.468c0.062-.666.1-1.339,0.1-2.021A21.932,21.932,0,0,0,961.686,875.144Zm20.768,19.686a8.163,8.163,0,1,0,8.165,8.163A8.164,8.164,0,0,0,982.454,894.83Zm-0.171,9.524a1.191,1.191,0,1,1,1.191-1.191A1.19,1.19,0,0,1,982.283,904.354Zm-0.5-1.01h1v16.343h-1V903.344Zm0,15.656h5.438v1h-5.438v-1Zm-21.619,27.393a2.134,2.134,0,0,1,0-2.868l4.615-4.955a1.8,1.8,0,0,1,2.672,0,2.136,2.136,0,0,1,0,2.869l-4.615,4.954A1.8,1.8,0,0,1,960.162,946.393Zm0,0-4.615-4.954a2.136,2.136,0,0,1,0-2.869,1.8,1.8,0,0,1,2.672,0l4.615,4.955a2.134,2.134,0,0,1,0,2.868A1.8,1.8,0,0,1,960.162,946.393ZM961.5,931a1.5,1.5,0,0,1,1.5,1.5v4a1.5,1.5,0,0,1-3,0v-4A1.5,1.5,0,0,1,961.5,931Zm0-10a1.5,1.5,0,0,1,1.5,1.5v5a1.5,1.5,0,0,1-3,0v-5A1.5,1.5,0,0,1,961.5,921Z" transform="translate(-927 -870)"/>
+        </svg>
+        
+      </div>
     </div>
   </div>
-
   <div class="contact-us">
     <form class="form wrapper">
       <h2 class="form__heading">CONTACT US</h2>
@@ -115,31 +101,73 @@
         <input type="text" class="form__fname" name="firstname" placeholder="NAME">
         <input type="text" class="form__lname" name="lastname" placeholder="SURNAME">
       </div>
+      <span class="js-fгllname-error"></span>
       <input type="text" class="form__email" name="email" placeholder="USER@DOMAIN.COM">
-      <span class="email-error"></span>
+      <span class="js-email-error"></span>
       <textarea name="message" class="form__message" placeholder="MESSAGE"></textarea>
-      <select clsaa="country" name="country">
+      <select clsas="form-country" name="country">
         <option value="australia">Australia</option>
         <option value="canada">Canada</option>
         <option value="usa">USA</option>
       </select>
+      <h3>Preferred type:</h3>
+      <ul class="form__department-select">
+        <li>
+          <input type="radio" id="f-option" name="selector">
+          <label for="f-option">Classik</label>
+          <div class="check"></div>
+        </li>
+      
+        <li>
+          <input type="radio" id="s-option" name="selector">
+          <label for="s-option">Kids</label>
+          <div class="check"><div class="inside"></div></div>
+        </li>
+      
+        <li>
+          <input type="radio" id="t-option" name="selector">
+          <label for="t-option">Sport</label>
+          <div class="check"><div class="inside"></div></div>
+        </li>
+      </ul>
+      <h3>Preferred color:</h3>
+      <div class="form__colors-multiselect">
+        <div class="pretty p-default p-curve p-thick">
+          <input type="checkbox" />
+          <div class="state p-warning">
+            <label>Red</label>
+          </div>
+        </div>
+        <div class="pretty p-default p-curve p-thick">
+          <input type="checkbox" />
+          <div class="state p-warning">
+            <label>Blue</label>
+          </div>
+        </div>
+        <div class="pretty p-default p-curve p-thick">
+          <input type="checkbox" />
+          <div class="state p-warning">
+            <label>Black</label>
+          </div>
+        </div>
+      </div>
     
-      <input class="form__submit" type="submit" value="SEND">
+      <input class="form__submit js-form__submit" type="submit" value="SEND">
     </form>
   </div>
-  <div class="products">
+  <div class="product">
     <!-- Tab links -->
-    <h4 class="products__heading wrapper">POPULAR BIKES</h4>
-    <div class="products__tab wrapper">
-      <button class="tablinks" data-content="classik">Classik</button>
-      <button class="tablinks" data-content="kids">Kids</button>
-      <button class="tablinks" data-content="sport">Sport</button>
+    <h4 class="product__heading wrapper">POPULAR BIKES</h4>
+    <div class="product__tab js-product__tab wrapper">
+      <button type="button" class="tablinks" data-content="classik">Classik</button>
+      <button type="button" class="tablinks" data-content="kids">Kids</button>
+      <button type="button" class="tablinks" data-content="sport">Sport</button>
     </div>
 
     <!-- Tab content -->
-    <div class="products__content">
-      <ul class="products__controls">
-        <li class="products__controls-prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+    <div class="product__content">
+      <ul class="product__controls">
+        <li class="product__controls-prev" data-controls="prev" aria-controls="customize" tabindex="-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
                 <defs>
                   <style>
@@ -154,7 +182,7 @@
                 <path id="prev" class="cls-1" d="M33,461H71a10,10,0,0,1,10,10v38a10,10,0,0,1-10,10H33a10,10,0,0,1-10-10V471A10,10,0,0,1,33,461Zm12.97,26.53a3.3,3.3,0,0,1,4.77,0l8.24,8.52a3.573,3.573,0,0,1,0,4.933,3.3,3.3,0,0,1-4.771,0l-8.24-8.52A3.573,3.573,0,0,1,45.97,487.53Zm0,0,8.24-8.52a3.3,3.3,0,0,1,4.771,0,3.573,3.573,0,0,1,0,4.933l-8.24,8.52a3.3,3.3,0,0,1-4.77,0A3.573,3.573,0,0,1,45.97,487.53Z" transform="translate(-22 -460)"/>
               </svg>
         </li>
-        <li class="products__controls-next" data-controls="next" aria-controls="customize" tabindex="-1">
+        <li class="product__controls-next" data-controls="next" aria-controls="customize" tabindex="-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
                 <defs>
                   <style>
@@ -170,114 +198,140 @@
               </svg>        
         </li>
       </ul>
-      <div class="products__cards tabcontent-classik ds-block">
-        <div class="products__card">
-          <img src="https://static.turbosquid.com/Preview/001242/643/K9/3D-classic-bicycle-versions_600.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+      <div class="product__cards tabcontent-classik display-block">
+        <div class="product__card">
+          <a href="#">
+            <img src="https://static.turbosquid.com/Preview/001242/643/K9/3D-classic-bicycle-versions_600.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://oldnewbikes.com/300/gents-classic-bicycle-with-rod-brakes.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://oldnewbikes.com/300/gents-classic-bicycle-with-rod-brakes.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+              <span class="product__price">₽ 1999</span>
+              <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://www.sartoribikes.com/wp-content/uploads/2014/04/sartoribikes_bicicletta_artigianale_vintage_campagnola_uomo_8-450x450.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://www.sartoribikes.com/wp-content/uploads/2014/04/sartoribikes_bicicletta_artigianale_vintage_campagnola_uomo_8-450x450.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+              <span class="product__price">₽ 1999</span>
+              <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://cdn.shopify.com/s/files/1/0017/3791/6514/products/2019_SE_LAGER_USA_ELECTRICBLUE_FRONT_2400x.png?v=1544215520">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://cdn.shopify.com/s/files/1/0017/3791/6514/product/2019_SE_LAGER_USA_ELECTRICBLUE_FRONT_2400x.png?v=1544215520">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+              <span class="product__price">₽ 1999</span>
+              <button class="product__button" type="button">В корзину</button>
           </div>
           
         </div>
-        <div class="products__card">
-          <img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-              <span class="price">₽ 1999</span>
-              <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+              <span class="product__price">₽ 1999</span>
+              <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
       </div>
-      <div class="products__cards tabcontent-kids">
-        <div class="products__card">
-          <img src="https://manasah.azureedge.net/pictures/0087197_upten-robot-alloy-children-bicycle-kids-bike-cycle_510.jpeg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
+      <div class="product__cards tabcontent-kids">
+        <div class="product__card">
+          <a href="#">
+            <img src="https://manasah.azureedge.net/pictures/0087197_upten-robot-alloy-children-bicycle-kids-bike-cycle_510.jpeg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+            <span class="product__price">₽ 1999</span>
             <a href="" class="button">В корзину</a>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://target.scene7.com/is/image/Target/GUEST_18f73c2b-c756-45f9-8f45-a00dd5c3bc4c?wid=488&hei=488&fmt=pjpeg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://target.scene7.com/is/image/Target/GUEST_18f73c2b-c756-45f9-8f45-a00dd5c3bc4c?wid=488&hei=488&fmt=pjpeg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://5.imimg.com/data5/LO/KX/MY-65810577/fancy-kids-bicycle-500x500.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://5.imimg.com/data5/LO/KX/MY-65810577/fancy-kids-bicycle-500x500.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://5.imimg.com/data5/HF/NJ/MY-72055708/children-bicycle-500x500.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://5.imimg.com/data5/HF/NJ/MY-72055708/children-bicycle-500x500.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
       </div>
-      <div class="products__cards tabcontent-sport">
-        <div class="products__card">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/81XXpXetgML._AC_SX425_.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+      <div class="product__cards tabcontent-sport">
+        <div class="product__card">
+          <a href="#">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81XXpXetgML._AC_SX425_.jpg">
+          </a>
+          <div class="product__info">
+            <h3>Маленькое черное платье 1</h3>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://www.gtech.co.uk/media/gtech/product/ebike-sport/ebike-sport-zoom-2.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://www.gtech.co.uk/media/gtech/product/ebike-sport/ebike-sport-zoom-2.jpg">
+          </a>
+          <div class="product__info">
+            <h3>Маленькое черное платье 2</h3>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://i.pinimg.com/originals/15/e3/fb/15e3fb6524edc383d3e7c39e374b78fd.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="">
+            <img src="https://i.pinimg.com/originals/15/e3/fb/15e3fb6524edc383d3e7c39e374b78fd.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
-        <div class="products__card">
-          <img src="https://img5.goodfon.ru/wallpaper/nbig/4/7d/velosiped-sport-baik-bicycle-carbon-spor-pinarello-dogma.jpg">
-          <div class="products__list">
-            <h3>Маленькое черное платье</h3>
-            <span class="price">₽ 1999</span>
-            <a href="" class="button">В корзину</a>
+        <div class="product__card">
+          <a href="#">
+            <img src="https://img5.goodfon.ru/wallpaper/nbig/4/7d/velosiped-sport-baik-bicycle-carbon-spor-pinarello-dogma.jpg">
+          </a>
+          <div class="product__info">
+            <a class="product__link" href="#">Маленькое черное платье</a>
+            <span class="product__price">₽ 1999</span>
+            <button class="product__button" type="button">В корзину</button>
           </div>
         </div>
       </div>
@@ -297,16 +351,18 @@
             items: 1,
             loop: true,
             controlsContainer: "#customize-controls",
-            nav: false,
-            autoplay: true,
+            nav: true,
+            navContainer: '.mainscreen__paginations',
+            //autoplay: true,
             autoplayTimeout: 3000
         });
-        const prodSlider = document.querySelectorAll('.products__cards');
+        
+        const prodSlider = document.querySelectorAll('.product__cards');
         prodSlider.forEach(element => {
-          const productsCard = tns({
+          const productCard = tns({
             container: element,
             items: 1,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 3000,
             responsive: {
               768: {
@@ -324,7 +380,7 @@
             },
             loop: true,
             nav: false,
-            controlsContainer: ".products__controls",
+            controlsContainer: ".product__controls",
         });
         });
     </script>
