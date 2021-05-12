@@ -343,46 +343,7 @@
     
     
     
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script>
-        let banner = tns({
-            container: '.main-banner__items',
-            items: 1,
-            loop: true,
-            controlsContainer: "#customize-controls",
-            nav: true,
-            navContainer: '.mainscreen__paginations',
-            //autoplay: true,
-            autoplayTimeout: 3000
-        });
-        
-        const prodSlider = document.querySelectorAll('.product__cards');
-        prodSlider.forEach(element => {
-          const productCard = tns({
-            container: element,
-            items: 1,
-            autoplay: false,
-            autoplayTimeout: 3000,
-            responsive: {
-              768: {
-                edgePadding: 20,
-                gutter: 20,
-                items: 2,
-                controls: true,
-              },
-              700: {
-                gutter: 30
-              },
-              900: {
-                items: 3
-              }
-            },
-            loop: true,
-            nav: false,
-            controlsContainer: ".product__controls",
-        });
-        });
-    </script>
 </body>
 </html>
