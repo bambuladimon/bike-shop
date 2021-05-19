@@ -1,97 +1,110 @@
-"use strict";
+import Slider from './slider.js';
+import Header from './header.js';
+import Products from './products.js';
+import Form from './form.js';
+import PopUp from './popup.js';
+import RequestHTTP from './json-requests.js';
 
-var _slider = _interopRequireDefault(require("./slider.js"));
 
-var _header = _interopRequireDefault(require("./header.js"));
-
-var _products = _interopRequireDefault(require("./products.js"));
-
-var _form = _interopRequireDefault(require("./form.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var mainBanner = new _slider["default"]({
-  container: '.main-banner__items',
-  items: 1,
-  loop: true,
-  controlsContainer: "#customize-controls",
-  nav: true,
-  navContainer: '.mainscreen__paginations',
-  autoplay: true,
-  autoplayTimeout: 3000
+const mainBanner = new Slider({
+    container: '.main-banner__items',
+    items: 1,
+    loop: true,
+    controlsContainer: "#customize-controls",
+    nav: true,
+    navContainer: '.mainscreen__paginations',
+    autoplay: true,
+    autoplayTimeout: 3000
 });
-var clasikBikeSlider = new _slider["default"]({
-  container: '.tabcontent-classik',
-  items: 1,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  responsive: {
-    768: {
-      edgePadding: 20,
-      gutter: 20,
-      items: 2,
-      controls: true
+
+const clasikBikeSlider = new Slider({
+    container: '.tabcontent-classik',
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        768: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 2,
+        controls: true,
+        },
+        700: {
+        gutter: 30
+        },
+        900: {
+        items: 3
+        }
     },
-    700: {
-      gutter: 30
-    },
-    900: {
-      items: 3
-    }
-  },
-  loop: true,
-  nav: false,
-  controlsContainer: ".product__controls"
+    loop: true,
+    nav: false,
+    controlsContainer: ".product__controls"
 });
-var kidsBikeSlider = new _slider["default"]({
-  container: '.tabcontent-kids',
-  items: 1,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  responsive: {
-    768: {
-      edgePadding: 20,
-      gutter: 20,
-      items: 2,
-      controls: true
+
+const kidsBikeSlider = new Slider({
+    container: '.tabcontent-kids',
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        768: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 2,
+        controls: true,
+        },
+        700: {
+        gutter: 30
+        },
+        900: {
+        items: 3
+        }
     },
-    700: {
-      gutter: 30
-    },
-    900: {
-      items: 3
-    }
-  },
-  loop: true,
-  nav: false,
-  controlsContainer: ".product__controls"
+    loop: true,
+    nav: false,
+    controlsContainer: ".product__controls"
 });
-var sportBikeSlider = new _slider["default"]({
-  container: '.tabcontent-sport',
-  items: 1,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  responsive: {
-    768: {
-      edgePadding: 20,
-      gutter: 20,
-      items: 2,
-      controls: true
+
+const sportBikeSlider = new Slider({
+    container: '.tabcontent-sport',
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        768: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 2,
+        controls: true,
+        },
+        700: {
+        gutter: 30
+        },
+        900: {
+        items: 3
+        }
     },
-    700: {
-      gutter: 30
-    },
-    900: {
-      items: 3
-    }
-  },
-  loop: true,
-  nav: false,
-  controlsContainer: ".product__controls"
-});
-var menuBtn = new _header["default"]('.js-header__hamburger', '.js-header__nav');
+    loop: true,
+    nav: false,
+    controlsContainer: ".product__controls"
+})
+
+const menuBtn = new Header('.js-header__hamburger', '.js-header__nav');
+
 menuBtn.init();
-var products = new _products["default"]('.js-product__tab', '.product__cards');
+
+const products = new Products('.js-product__tab', '.product__cards');
+
 products.init();
-var form = new _form["default"](".form__email", ".form__fname", ".form__lname");
+
+const form = new Form(".form__email", ".form__fname", ".form__lname");
+
 form.init();
+
+const popup = new PopUp('.modal__close-popup', '.modal');
+
+popup.init();
+
+const comments = new RequestHTTP('https://jsonplaceholder.typicode.com/comments', '.comment');
+
+comments.init();

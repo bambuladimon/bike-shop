@@ -2,6 +2,8 @@ import Slider from './slider.js';
 import Header from './header.js';
 import Products from './products.js';
 import Form from './form.js';
+import PopUp from './popup.js';
+import RequestHTTP from './json-requests.js';
 
 
 const mainBanner = new Slider({
@@ -98,3 +100,11 @@ products.init();
 const form = new Form(".form__email", ".form__fname", ".form__lname");
 
 form.init();
+
+const popup = new PopUp('.modal__close-popup', '.modal');
+
+popup.init();
+
+const comments = new RequestHTTP('https://jsonplaceholder.typicode.com/comments', '.comment');
+
+comments.init();
